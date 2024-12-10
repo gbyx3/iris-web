@@ -47,6 +47,7 @@ class Alert(db.Model):
     alert_customer_id = Column(ForeignKey('client.client_id'), nullable=False)
     alert_classification_id = Column(ForeignKey('case_classification.id'))
     alert_resolution_status_id = Column(ForeignKey('alert_resolution_status.resolution_status_id'), nullable=True)
+    custom_attributes = Column(JSON)
 
     owner = relationship('User', foreign_keys=[alert_owner_id])
     severity = relationship('Severity')

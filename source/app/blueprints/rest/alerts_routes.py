@@ -46,6 +46,7 @@ from app.datamgmt.alerts.alerts_db import create_case_from_alerts
 from app.datamgmt.case.case_db import get_case
 from app.datamgmt.manage.manage_access_control_db import check_ua_case_client
 from app.datamgmt.manage.manage_access_control_db import user_has_client_access
+from app.datamgmt.manage.manage_attribute_db import get_default_custom_attributes
 from app.iris_engine.access_control.utils import ac_set_new_case_access
 from app.iris_engine.module_handler.module_handler import call_modules_hook
 from app.iris_engine.utils.tracker import track_activity
